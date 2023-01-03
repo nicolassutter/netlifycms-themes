@@ -4,7 +4,9 @@
   "description": "",
   "main": "",
   "scripts": {
-    "dev": "pnpm build -w",
+    "dev": "npm-run-all --parallel dev:serve dev:build",
+    "dev:serve": "serve dist; pnpm build -w",
+    "dev:build": "pnpm build -w",
     "build": "postcss src/main.css -d dist"
   },
   "keywords": [],
@@ -16,5 +18,9 @@
     "postcss-cli": "^10.1.0",
     "postcss-import": "^15.1.0",
     "postcss-nesting": "^10.2.0"
+  },
+  "dependencies": {
+    "npm-run-all": "^4.1.5",
+    "serve": "^14.1.2"
   }
 }
