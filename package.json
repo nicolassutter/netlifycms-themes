@@ -3,8 +3,18 @@
   "version": "0.1.0",
   "description": "",
   "main": "",
-  "scripts": {},
+  "scripts": {
+    "dev": "pnpm build -w",
+    "build": "postcss src/main.css -d dist"
+  },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.20",
+    "postcss-cli": "^10.1.0",
+    "postcss-import": "^15.1.0",
+    "postcss-nesting": "^10.2.0"
+  }
 }
