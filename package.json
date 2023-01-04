@@ -2,8 +2,16 @@
   "name": "netlifycms-themes",
   "version": "0.1.0",
   "description": "",
-  "main": "",
+  "main": "./dist/netlifycms-themes.js",
+  "module": "./dist/netlifycms-themes.js",
+  "types": "./dist/lib.d.ts",
   "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/netlifycms-themes.js",
+      "types": "./dist/lib.d.ts"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
