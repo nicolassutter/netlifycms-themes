@@ -4,7 +4,7 @@ import 'uno.css'
 function init() {
   document.body.setAttribute('data-netlifycms-theme', '')
 
-  const existingStyles = document.querySelector('data-netlifycms-styles')
+  const existingStyles = document.querySelector('[data-netlifycms-styles]')
 
   if (existingStyles) {
     existingStyles.parentElement?.removeChild(existingStyles)
