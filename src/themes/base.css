@@ -1,0 +1,25 @@
+body[data-netlifycms-theme] {
+  background-color: var(--theme-color-base);
+
+  & * {
+    color: var(--theme-color-text);
+  }
+  
+  & h1, & h2, & h3, & h4, & h5, & h6, & p {
+    color: var(--theme-color-text);
+  }
+  
+  & *[class*="ListCard"], & *[class*="GridCard"] {
+    & > a {
+      background-color: var(--theme-color-surface0);
+    }
+  }
+  
+  & *[class*="StyledDropdownButton-button-default"] {
+    background-color: var(--theme-color-primary);
+  }
+  
+  & header[class*="AppHeader"] {
+    background-color: var(--theme-color-base);
+  }
+}

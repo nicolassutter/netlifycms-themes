@@ -1,3 +1,5 @@
+@import './base.css';
+
 :root {
   --theme-color-primary: #c6a0f6;
   --theme-color-secondary: #a6da95;
