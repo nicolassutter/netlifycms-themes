@@ -1,25 +1,144 @@
 body[data-netlifycms-theme] {
   background-color: var(--theme-color-base);
+  color: var(--theme-color-text);
 
+  /* Everything */
   & * {
-    color: var(--theme-color-text);
+    color: inherit;
   }
   
+  /* Basic text content */
   & h1, & h2, & h3, & h4, & h5, & h6, & p {
     color: var(--theme-color-text);
   }
+
+  /* Every card */
+  & *[class*="-card"] {
+    background-color: var(--theme-color-surface0);
+  }
   
+  /* Specific cards like collection items */
   & *[class*="ListCard"], & *[class*="GridCard"] {
+    & *[class*="CardHeading"], & *[class*="CardTitle"] {
+      display: flex;
+
+      &::before {
+        display: block;
+        content: '';
+        font-size: 24px;
+
+        @apply i-carbon-document mr-2;
+      }
+    }
+
+    & *[class*="CardBody"]::after {
+      box-shadow: var(--theme-color-surface0) 0px -15px 24px inset;
+    }
+
+    & *[class*="CardBody"]:last-child {
+      height: 100%;
+    }
+
     & > a {
       background-color: var(--theme-color-surface0);
     }
+
+    & > a:hover {
+      background-color: var(--theme-color-surface1);
+    }
+  }
+
+  /* grid card */
+  & *[class*="GridCard"] {
+    height: unset;
+    display: flex;
+    flex-direction: column;
+
+    & > a {
+      flex-grow: 1;
+    }
   }
   
-  & *[class*="StyledDropdownButton-button-default"] {
+  /* dropdown button in header */
+  & *[class*="AppHeaderQuickNewButton"] {
     background-color: var(--theme-color-primary);
+    color: var(--theme-color-text-dark);
+  }
+
+  /* Dropdown window */
+  & *[class*="dropdownList"] {
+    background-color: var(--theme-color-surface1);
+  }
+
+  /* suggestions window */
+  & *[class*="Suggestions"] {
+    background-color: var(--theme-color-surface1);
+    border: unset;
+
+    & *[class*="SuggestionItem"] {
+
+      &:hover {
+        background-color: var(--theme-color-active);
+        color: var(--theme-color-text-dark);
+      }
+    }
+  }
+
+  /* dropdown item */
+  & *[class*="dropdownItem"] {
+    border-color: var(--theme-color-surface2);
+
+    &:hover {
+      background-color: var(--theme-color-surface2);
+    }
   }
   
+  /* header */
   & header[class*="AppHeader"] {
     background-color: var(--theme-color-base);
+  }
+
+  /* Active header buttons */
+  & .header-link-active {
+    color: var(--theme-color-active);
+  }
+
+  /* Every default button */
+  & [class*="button-default-gray"] {
+    background-color: var(--theme-color-primary);
+    color: var(--theme-color-text-dark);
+    @apply transition-colors;
+    
+    &:hover {
+      background-color: var(--theme-color-primary-accent);
+    }
+  }
+
+  /* Buttons to add new items to collections */
+  & [class*="CollectionTopNewButton"] {
+    display: flex;
+    align-items: center;
+
+    &::before {
+      display: block;
+      content: '';
+      font-size: 24px;
+
+      @apply i-carbon-add mr-1;
+    }
+  }
+
+  /* Sidebar Active and hover items */
+  & [class*="SidebarNavLink"] {
+    &.sidebar-active, &:hover, &:active {
+      color: var(--theme-color-text-dark);
+      background-color: var(--theme-color-active);
+      border-left-color: var(--theme-color-active-accent);
+    }
+  }
+
+  /* inputs */
+  & input {
+    background-color: var(--theme-color-surface2);
   }
 }
