@@ -1,4 +1,5 @@
-import { defineConfig } from "vite"
+import { defineConfig } from 'vite'
+import dts from 'vite-plugin-dts'
 import autoprefixer from 'autoprefixer'
 import postcssNesting from 'postcss-nesting'
 import postcssImport from 'postcss-import'
@@ -19,5 +20,7 @@ export default defineConfig({
         postcssImport()
       ]
     }
-  }
+  },
+
+  plugins: [dts()]
 })
