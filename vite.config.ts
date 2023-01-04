@@ -22,5 +22,9 @@ export default defineConfig({
     }
   },
 
+  server: {
+    cors: true
+  },
+
   plugins: [dts()]
 })
