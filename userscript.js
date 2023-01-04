@@ -4,11 +4,15 @@
 
 ;(async function() {
   const VITE_PORT = 5173
-  const { applyTheme } = await import(`http://localhost:${VITE_PORT}/src/lib.ts`)
 
-  if (!applyTheme) {
-    return
-  }
+  const vite = document.createElement('script')
+  vite.setAttribute('type', 'module')
+  vite.setAttribute('src', `http://localhost:${VITE_PORT}/@vite/client`)
 
-  applyTheme('catppuccin-macchiato')
+  const dev = document.createElement('script')
+  dev.setAttribute('type', 'module')
+  dev.setAttribute('src', `http://localhost:${VITE_PORT}/src/main.ts`)
+
+  document.body.appendChild(vite)
+  document.body.appendChild(dev)
 })()
