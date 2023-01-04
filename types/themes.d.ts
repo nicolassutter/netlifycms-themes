@@ -1,0 +1,1 @@
+export type Theme = 'catppuccin-latte' | 'catppuccin-macchiato' | 'nord-light' | 'nord'

@@ -1,10 +1,11 @@
+import type { Theme } from '../types/themes'
 import 'uno.css'
 
 function init() {
   document.body.setAttribute('data-netlifycms-theme', '')
 }
 
-export async function applyTheme(_theme: 'catppuccin-macchiato') {
+export async function applyTheme(_theme: Theme) {
   if (typeof document !== 'undefined') {
     init()
 
