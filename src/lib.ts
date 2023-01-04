@@ -17,7 +17,7 @@ export async function applyTheme(_theme: 'catppuccin-macchiato') {
       const style = document.createElement('style')
       style.innerText = css
   
-      document.body.appendChild(style)
+      document.head.appendChild(style)
     }
   }
 }
