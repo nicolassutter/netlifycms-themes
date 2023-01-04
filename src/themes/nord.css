@@ -1,0 +1,27 @@
+@import './base.css';
+
+:root {
+  --theme-color-primary: #5e81ac; 
+  --theme-color-secondary: #8fbcbb;
+  --theme-color-active: #88c0d0;
+  
+  --theme-color-primary-accent: #6f8bad; 
+  --theme-color-secondary-accent: hsl(107, 29%, 78%);
+  --theme-color-active-accent: #a1c7d1;
+
+  --theme-color-text: #eceff4;
+  --theme-color-text-variant0: #e5e9f0;
+  --theme-color-base: #2e3440;
+
+  --theme-color-surface0: #3b4252;
+  --theme-color-surface1: #434c5e;
+
+  --theme-color-overlay0: #555E71;
+  --theme-color-overlay1:  #5E6779;
+
+  --theme-color-mantle: #20242D;
+  --theme-color-crust: #1E222A;
+
+  --theme-color-green: #a3be8c;
+  --theme-color-red: #bf616a;
+}

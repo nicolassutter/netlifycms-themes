@@ -1,0 +1,29 @@
+@import './base.css';
+
+:root {
+  --theme-color-primary: hsl(266, 85%, 58%); 
+  --theme-color-secondary: hsl(109, 58%, 40%);
+  --theme-color-active: hsl(220, 91%, 54%);
+  
+  --theme-color-primary-accent: hsl(266, 76%, 67%); 
+  --theme-color-secondary-accent: hsl(109, 28%, 48%);
+  --theme-color-active-accent: hsl(220, 86%, 62%);
+
+  --theme-color-text: hsl(234, 16%, 35%);
+  --theme-color-text-variant0: hsl(0, 0%, 100%);
+  --theme-color-base: hsl(220, 23%, 95%);
+
+  --theme-color-surface0: hsl(223, 16%, 83%);
+  --theme-color-surface1: hsl(225, 14%, 77%);
+  --theme-color-surface2: hsl(227, 12%, 71%);
+
+  --theme-color-overlay0: hsl(228, 11%, 65%);
+  --theme-color-overlay1: hsl(231, 10%, 59%);
+  --theme-color-overlay2: hsl(232, 10%, 53%);
+
+  --theme-color-mantle: hsl(220, 22%, 92%);
+  --theme-color-crust: hsl(220, 21%, 89%);
+
+  --theme-color-green: hsl(109, 58%, 40%);
+  --theme-color-red: hsl(347, 87%, 44%);
+}

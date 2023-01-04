@@ -10,10 +10,20 @@
   --theme-color-active-accent: hsl(220, 83%, 65%);
 
   --theme-color-text: hsl(227, 68%, 88%);
-  --theme-color-text-dark: hsl(236, 23%, 12%);
+  --theme-color-text-variant0: hsl(236, 23%, 12%);
   --theme-color-base: hsl(232, 23%, 18%);
 
   --theme-color-surface0: hsl(230, 19%, 26%);
   --theme-color-surface1: hsl(231, 16%, 34%);
   --theme-color-surface2: hsl(230, 14%, 41%);
+
+  --theme-color-overlay0: hsl(230, 12%, 49%);
+  --theme-color-overlay1: hsl(228, 15%, 57%);
+  --theme-color-overlay2: hsl(228, 20%, 65%);
+
+  --theme-color-mantle: hsl(233, 23%, 15%);
+  --theme-color-crust: hsl(236, 23%, 12%);
+
+  --theme-color-green: hsl(105, 48%, 72%);
+  --theme-color-red: hsl(351, 74%, 73%);
 }
