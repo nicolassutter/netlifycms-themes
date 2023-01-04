@@ -1,3 +1,5 @@
+import 'uno.css'
+
 function init() {
   document.body.setAttribute('data-netlifycms-theme', '')
 }
