@@ -1,2 +1,3 @@
+import { applyTheme } from './lib'
 
-export {}
+applyTheme('catppuccin-macchiato')
